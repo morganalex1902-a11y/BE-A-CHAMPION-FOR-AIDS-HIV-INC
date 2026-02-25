@@ -11,7 +11,7 @@ export default function HeroSection() {
         src="/images/hero-community.jpg"
         alt="Community coming together for HIV awareness"
         fill
-        className="object-cover opacity-50 absolute inset-0"
+        className="object-cover opacity-25 absolute inset-0"
       />
 
       {/* Background Pattern */}
