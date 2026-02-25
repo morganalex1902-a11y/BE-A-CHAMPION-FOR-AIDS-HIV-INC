@@ -39,15 +39,24 @@ export default function AboutSection() {
 
         {/* Image and Mission Statement */}
         <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
-          <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
-            <Image
-              src="/images/about-organization.jpg"
-              alt="BE A CHAMPION organization team collaborating"
-              fill
-              className="object-cover"
-            />
+          <div className="flex flex-col gap-6">
+            <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src="/images/about-organization.jpg"
+                alt="BE A CHAMPION organization team collaborating"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="flex justify-center">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F5c758e804cba4fa3a488e9088887877b%2Fe96c9aad652440cea842fdb56beed646?format=webp&width=800&height=800"
+                alt="BE A CHAMPION FOR AIDS-HIV Official Seal"
+                className="w-80 h-auto rounded-lg shadow-lg"
+              />
+            </div>
           </div>
-          
+
           <div className="bg-gray-800 p-8 rounded-lg border-l-4 border-secondary">
             <h3 className="text-2xl font-bold text-secondary mb-4">About BE A CHAMPION</h3>
           <p className="text-lg text-gray-300 mb-4 leading-relaxed">

@@ -11,8 +11,8 @@ const programs = [
     title: 'Speak Out Club',
     description: 'Youth education meetings designed to motivate and empower the next generation with knowledge about HIV/AIDS awareness and stigma reduction.',
     icon: Users,
-    color: 'bg-blue-50',
-    accentColor: 'text-blue-600',
+    color: 'bg-red-50',
+    accentColor: 'text-secondary',
     image: '/images/youth-education.jpg'
   },
   {
@@ -20,8 +20,8 @@ const programs = [
     title: 'Community Giveaways',
     description: 'Regular giveaway events including free haircuts, school supplies, backpacks, toy drives, and turkey distributions to support our community.',
     icon: Gift,
-    color: 'bg-green-50',
-    accentColor: 'text-green-600',
+    color: 'bg-yellow-50',
+    accentColor: 'text-secondary',
     image: '/images/community-support.jpg'
   },
   {
@@ -29,8 +29,8 @@ const programs = [
     title: 'Awareness Campaigns',
     description: 'National HIV/AIDS Days recognition, stigma reduction initiatives, and campaigns featuring slogans like "HIV is Not a Crime" to promote understanding.',
     icon: Megaphone,
-    color: 'bg-purple-50',
-    accentColor: 'text-purple-600',
+    color: 'bg-red-50',
+    accentColor: 'text-secondary',
     image: '/images/resources-support.jpg'
   },
   {
@@ -38,8 +38,8 @@ const programs = [
     title: 'Walks & Events',
     description: 'South Florida AIDS Walk, Zero HIV Stigma Walk, 5K/3K events, and community gatherings that unite people in the fight against HIV/AIDS.',
     icon: Footprints,
-    color: 'bg-orange-50',
-    accentColor: 'text-orange-600',
+    color: 'bg-yellow-50',
+    accentColor: 'text-secondary',
     image: '/images/community-event.jpg'
   },
 ]

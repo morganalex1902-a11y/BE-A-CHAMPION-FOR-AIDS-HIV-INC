@@ -37,9 +37,9 @@ export default function About() {
       <Header />
       <main className="bg-background">
         {/* Hero Section */}
-        <section className="py-16 md:py-24 bg-primary text-white">
+        <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">Our Story</h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-secondary">Our Story</h1>
             <p className="text-xl opacity-95">
               Dedicated to fighting HIV/AIDS stigma through education, empowerment, and community action
             </p>
@@ -83,6 +83,19 @@ export default function About() {
                   </div>
                 </div>
               </div>
+            </div>
+
+            {/* Community Image */}
+            <div className="mb-16">
+              <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src="https://cdn.builder.io/api/v1/image/assets%2F5c758e804cba4fa3a488e9088887877b%2F467b64a474b94fe5839dba1042fcd6bb?format=webp&width=800&height=1200"
+                  alt="Speak Out Club youth education in classroom"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <p className="text-center text-foreground text-sm mt-4 italic">Our Speak Out Club youth engaging in education and community dialogue</p>
             </div>
 
             {/* Organization Details */}

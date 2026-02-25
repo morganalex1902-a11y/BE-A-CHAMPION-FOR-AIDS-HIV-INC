@@ -10,9 +10,9 @@ const programs = [
     id: 1,
     title: 'Speak Out Club',
     icon: Users,
-    color: 'bg-blue-50',
-    borderColor: 'border-blue-200',
-    accentColor: 'text-blue-600',
+    color: 'bg-red-50',
+    borderColor: 'border-red-200',
+    accentColor: 'text-primary',
     description: 'Youth education and empowerment program',
     fullDescription: 'Speak Out Club is our flagship youth education program designed to motivate and empower the next generation. Meeting regularly, members engage in discussions about HIV/AIDS awareness, stigma reduction, prevention strategies, and personal empowerment. This safe, judgment-free environment allows young people to ask questions, share experiences, and become advocates in their communities.',
     details: [
@@ -27,9 +27,9 @@ const programs = [
     id: 2,
     title: 'Community Giveaways',
     icon: Gift,
-    color: 'bg-green-50',
-    borderColor: 'border-green-200',
-    accentColor: 'text-green-600',
+    color: 'bg-yellow-50',
+    borderColor: 'border-yellow-200',
+    accentColor: 'text-secondary',
     description: 'Support programs for community members',
     fullDescription: 'Our Community Giveaway program provides essential items and services to support local residents. We organize regular events featuring free haircuts, school supplies, backpacks for students, toy drives during holidays, and turkey distributions during Thanksgiving. These giveaways demonstrate our commitment to supporting the whole community, not just those directly affected by HIV/AIDS.',
     details: [
@@ -45,9 +45,9 @@ const programs = [
     id: 3,
     title: 'Awareness Campaigns',
     icon: Megaphone,
-    color: 'bg-purple-50',
-    borderColor: 'border-purple-200',
-    accentColor: 'text-purple-600',
+    color: 'bg-red-50',
+    borderColor: 'border-red-200',
+    accentColor: 'text-primary',
     description: 'National campaigns and stigma reduction',
     fullDescription: 'Our Awareness Campaigns tackle stigma head-on through educational initiatives, national observance programs, and social media engagement. We participate in National HIV Testing Day, World AIDS Day, and other key awareness dates. Our signature campaign "HIV is Not a Crime" works to educate the public about the realities of HIV, counter misconceptions, and promote a more compassionate society.',
     details: [
@@ -63,9 +63,9 @@ const programs = [
     id: 4,
     title: 'Walks & Events',
     icon: Footprints,
-    color: 'bg-orange-50',
-    borderColor: 'border-orange-200',
-    accentColor: 'text-orange-600',
+    color: 'bg-yellow-50',
+    borderColor: 'border-yellow-200',
+    accentColor: 'text-secondary',
     description: 'Community gathering and fundraising events',
     fullDescription: 'We organize and participate in major community events that unite people in the fight against HIV/AIDS. The South Florida AIDS Walk, Zero HIV Stigma Walk, and our 5K/3K runs bring together hundreds of community members, supporters, and allies. These events raise awareness, funds for our programs, and most importantly, demonstrate the power of community solidarity.',
     details: [
@@ -81,9 +81,9 @@ const programs = [
     id: 5,
     title: 'Resources & Support',
     icon: Heart,
-    color: 'bg-pink-50',
-    borderColor: 'border-pink-200',
-    accentColor: 'text-pink-600',
+    color: 'bg-red-50',
+    borderColor: 'border-red-200',
+    accentColor: 'text-primary',
     description: 'Information and support services',
     fullDescription: 'We provide comprehensive resources for HIV prevention, testing, and support. Our organization connects people with testing centers, treatment options, mental health services, and support groups. We maintain an updated resource library with information about U=U, prevention methods, medication assistance programs, and support services for those living with HIV.',
     details: [
@@ -105,9 +105,9 @@ export default function Programs() {
       <Header />
       <main className="bg-background">
         {/* Hero Section */}
-        <section className="py-16 md:py-24 bg-primary text-white">
+        <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">Our Programs</h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-secondary">Our Programs</h1>
             <p className="text-xl opacity-95">
               Empowering communities through education, support, and action
             </p>
