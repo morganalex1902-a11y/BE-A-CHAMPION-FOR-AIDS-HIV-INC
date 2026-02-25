@@ -85,6 +85,19 @@ export default function About() {
               </div>
             </div>
 
+            {/* Community Image */}
+            <div className="mb-16">
+              <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src="https://cdn.builder.io/api/v1/image/assets%2F5c758e804cba4fa3a488e9088887877b%2F467b64a474b94fe5839dba1042fcd6bb?format=webp&width=800&height=1200"
+                  alt="Speak Out Club youth education in classroom"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <p className="text-center text-foreground text-sm mt-4 italic">Our Speak Out Club youth engaging in education and community dialogue</p>
+            </div>
+
             {/* Organization Details */}
             <div className="bg-white p-8 rounded-lg border-2 border-secondary">
               <h2 className="text-2xl font-bold text-primary mb-6 pb-3 border-b-2 border-secondary w-fit">Organization Details</h2>

@@ -129,10 +129,21 @@ export default function GetInvolved() {
             {activeSection === 'donate' && (
               <div className="animate-fade-in">
                 <div className="bg-white p-8 rounded-lg border-2 border-secondary mb-8">
-                  <h2 className="text-3xl font-bold text-primary mb-6">Make a Donation</h2>
-                  <p className="text-foreground mb-8">
-                    Your donation directly supports our programs including youth education, community giveaways, and awareness campaigns.
-                  </p>
+                  <div className="flex flex-col md:flex-row gap-8 mb-8">
+                    <div className="flex-1">
+                      <h2 className="text-3xl font-bold text-primary mb-6">Make a Donation</h2>
+                      <p className="text-foreground mb-0">
+                        Your donation directly supports our programs including youth education, community giveaways, and awareness campaigns.
+                      </p>
+                    </div>
+                    <div className="md:w-40 flex-shrink-0">
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets%2F5c758e804cba4fa3a488e9088887877b%2Fe96c9aad652440cea842fdb56beed646?format=webp&width=400&height=400"
+                        alt="BE A CHAMPION FOR AIDS-HIV Official Seal"
+                        className="w-full h-auto rounded-lg shadow-md"
+                      />
+                    </div>
+                  </div>
 
                   <div className="space-y-6">
                     {/* Donation Amount */}

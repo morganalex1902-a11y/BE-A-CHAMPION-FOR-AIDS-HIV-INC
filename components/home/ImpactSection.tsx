@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useState } from 'react'
 import { ChevronDown, ChevronUp } from 'lucide-react'
 
@@ -77,6 +78,19 @@ export default function ImpactSection() {
               </div>
             )
           })}
+        </div>
+
+        {/* Featured Image */}
+        <div className="mb-12">
+          <div className="relative h-80 rounded-lg overflow-hidden shadow-lg">
+            <Image
+              src="https://cdn.builder.io/api/v1/image/assets%2F5c758e804cba4fa3a488e9088887877b%2F8fe7488dca6b482480b4c2a49bd75086?format=webp&width=800&height=1200"
+              alt="Students holding KWIL Scholarship certificates"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <p className="text-center text-gray-600 text-sm mt-3 italic">Our program participants receiving KWIL Scholarships - tangible outcomes of our work</p>
         </div>
 
         {/* Key Achievements */}
