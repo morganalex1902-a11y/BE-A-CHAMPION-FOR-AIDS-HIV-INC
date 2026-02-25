@@ -25,7 +25,7 @@ export default function HeroSection() {
         <div className="max-w-3xl mx-auto animate-fade-in">
           {/* Logo Badge */}
           <div className="mb-8 inline-block">
-            <div className="w-32 h-32 relative mx-auto animate-bounce" style={{ animationDuration: '3s' }}>
+            <div className="w-32 h-32 relative mx-auto animate-bounce bg-transparent" style={{ animationDuration: '3s' }}>
               <Image
                 src="https://cdn.builder.io/api/v1/image/assets%2Fd262aa17ef624b1d94677905217b9bcb%2Fdcb2c7fbb2b04f0c8a3d3d99f08c65fc?format=webp&width=800&height=1200"
                 alt="BE A CHAMPION FOR AIDS-HIV"
