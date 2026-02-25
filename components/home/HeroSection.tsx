@@ -5,19 +5,19 @@ import Image from 'next/image'
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full h-screen bg-gradient-to-br from-black via-gray-900 to-black overflow-hidden">
+    <section className="relative w-full h-screen bg-gradient-to-br from-[#0A2350] via-[#1a3a5e] to-[#0A2350] overflow-hidden">
       {/* Background Image */}
       <Image
         src="/images/hero-community.jpg"
         alt="Community coming together for HIV awareness"
         fill
-        className="object-cover opacity-30 absolute inset-0"
+        className="object-cover opacity-20 absolute inset-0"
       />
-      
+
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10 z-10">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(200,16,46,0.3),transparent_50%)]"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_80%,rgba(200,16,46,0.2),transparent_50%)]"></div>
+      <div className="absolute inset-0 opacity-15 z-10">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(255,215,0,0.2),transparent_50%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_80%,rgba(227,27,35,0.2),transparent_50%)]"></div>
       </div>
 
       {/* Content */}
@@ -36,7 +36,7 @@ export default function HeroSection() {
           </div>
 
           {/* Headline */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-yellow-300 leading-tight">
             BE A CHAMPION
           </h1>
           <p className="text-3xl md:text-4xl font-bold mb-8 text-primary animate-pulse">
@@ -44,15 +44,15 @@ export default function HeroSection() {
           </p>
 
           {/* Subheading */}
-          <p className="text-xl md:text-2xl text-white mb-4 font-light">
+          <p className="text-xl md:text-2xl text-yellow-100 mb-4 font-light">
             We Are In This Fight Together
           </p>
-          <p className="text-lg md:text-xl text-gray-300 mb-12 font-light">
+          <p className="text-lg md:text-xl text-yellow-50 mb-12 font-light">
             Educating • Empowering • Ending Stigma
           </p>
 
           {/* Tagline */}
-          <p className="text-sm md:text-base text-gray-400 mb-12 px-4">
+          <p className="text-sm md:text-base text-yellow-100 mb-12 px-4">
             HIV/AIDS Doesn't Discriminate — Neither Do We | 501(c)(3) Approved
           </p>
 
@@ -60,19 +60,19 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               href="/get-involved#donate"
-              className="px-8 py-3 bg-primary hover:bg-red-700 text-white font-bold rounded-lg transition-all transform hover:scale-105 shadow-lg"
+              className="px-8 py-3 bg-primary hover:bg-red-800 text-white font-bold rounded-lg transition-all transform hover:scale-105 shadow-lg"
             >
               Donate Now
             </Link>
             <Link
               href="/programs"
-              className="px-8 py-3 bg-white hover:bg-gray-100 text-primary font-bold rounded-lg transition-all transform hover:scale-105 shadow-lg"
+              className="px-8 py-3 bg-yellow-400 hover:bg-yellow-300 text-[#0A2350] font-bold rounded-lg transition-all transform hover:scale-105 shadow-lg"
             >
               Join Speak Out Club
             </Link>
             <Link
               href="/contact"
-              className="px-8 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold rounded-lg transition-all transform hover:scale-105"
+              className="px-8 py-3 border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-[#0A2350] font-bold rounded-lg transition-all transform hover:scale-105"
             >
               Contact Us
             </Link>
@@ -82,8 +82,8 @@ export default function HeroSection() {
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-30">
           <div className="flex flex-col items-center">
-            <p className="text-white text-xs mb-2">Scroll to explore</p>
-            <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <p className="text-yellow-300 text-xs mb-2">Scroll to explore</p>
+            <svg className="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>
           </div>

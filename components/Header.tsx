@@ -18,7 +18,7 @@ export default function Header() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-sm border-b border-border shadow-sm">
+    <header className="sticky top-0 z-50 w-full bg-gradient-to-r from-[#0A2350] to-[#1a3a5e] backdrop-blur-sm border-b-4 border-yellow-400 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -32,8 +32,8 @@ export default function Header() {
               />
             </div>
             <div className="hidden sm:block">
-              <div className="text-sm font-bold text-primary">BE A CHAMPION</div>
-              <div className="text-xs text-muted-foreground">FOR AIDS-HIV</div>
+              <div className="text-sm font-bold text-yellow-400">BE A CHAMPION</div>
+              <div className="text-xs text-yellow-100">FOR AIDS-HIV</div>
             </div>
           </Link>
 
@@ -43,7 +43,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="px-3 py-2 text-sm font-medium text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
+                className="px-3 py-2 text-sm font-medium text-white hover:text-yellow-400 hover:bg-white/10 rounded-md transition-colors"
               >
                 {item.label}
               </Link>
@@ -54,7 +54,7 @@ export default function Header() {
           <div className="hidden md:flex items-center gap-3">
             <Link
               href="/get-involved#donate"
-              className="px-5 py-2 bg-primary text-white font-semibold rounded-lg hover:bg-red-700 transition-colors"
+              className="px-5 py-2 bg-primary text-white font-semibold rounded-lg hover:bg-red-800 transition-colors shadow-md"
             >
               Donate
             </Link>
@@ -63,25 +63,25 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 hover:bg-muted rounded-md transition-colors"
+            className="md:hidden p-2 hover:bg-white/10 rounded-md transition-colors"
           >
             {isOpen ? (
-              <X className="w-6 h-6 text-foreground" />
+              <X className="w-6 h-6 text-white" />
             ) : (
-              <Menu className="w-6 h-6 text-foreground" />
+              <Menu className="w-6 h-6 text-white" />
             )}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <nav className="md:hidden pb-4 animate-in fade-in slide-in-from-top-2">
+          <nav className="md:hidden pb-4 animate-in fade-in slide-in-from-top-2 bg-black/20">
             {menuItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="block px-3 py-2 text-sm font-medium text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
+                className="block px-3 py-2 text-sm font-medium text-white hover:text-yellow-400 hover:bg-white/10 rounded-md transition-colors"
               >
                 {item.label}
               </Link>
@@ -89,7 +89,7 @@ export default function Header() {
             <Link
               href="/get-involved#donate"
               onClick={() => setIsOpen(false)}
-              className="block px-3 py-2 mt-2 bg-primary text-white font-semibold rounded-md hover:bg-red-700 transition-colors text-center"
+              className="block px-3 py-2 mt-2 bg-primary text-white font-semibold rounded-md hover:bg-red-800 transition-colors text-center"
             >
               Donate Now
             </Link>

@@ -56,12 +56,12 @@ export default function ProgramsCarousel() {
   }
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-16 md:py-24 bg-gradient-to-b from-white via-amber-50 to-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Our Programs</h2>
-          <div className="h-1 w-20 bg-primary mx-auto mb-6"></div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#0A2350] mb-4">Our Programs</h2>
+          <div className="h-1 w-20 bg-yellow-400 mx-auto mb-6"></div>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Explore our impactful programs designed to educate, empower, and unite our community
           </p>
         </div>
@@ -77,8 +77,8 @@ export default function ProgramsCarousel() {
                   key={program.id}
                   className={`rounded-lg transition-all transform duration-300 cursor-pointer overflow-hidden ${
                     isActive
-                      ? `border-2 border-primary scale-105 shadow-lg`
-                      : 'border border-gray-200 hover:border-primary hover:shadow-md'
+                      ? `border-2 border-yellow-400 scale-105 shadow-lg`
+                      : 'border border-gray-200 hover:border-yellow-400 hover:shadow-md'
                   }`}
                   onClick={() => setCurrentIndex(index)}
                 >
@@ -94,10 +94,10 @@ export default function ProgramsCarousel() {
                   </div>
                   
                   {/* Content */}
-                  <div className={`p-6 ${program.color}`}>
-                    <Icon className={`w-10 h-10 mb-4 ${program.accentColor}`} />
-                    <h3 className="text-xl font-bold text-foreground mb-2">{program.title}</h3>
-                    <p className="text-muted-foreground text-sm">{program.description}</p>
+                  <div className={`p-6 bg-gradient-to-b from-yellow-50 to-white`}>
+                    <Icon className={`w-10 h-10 mb-4 text-primary`} />
+                    <h3 className="text-xl font-bold text-[#0A2350] mb-2">{program.title}</h3>
+                    <p className="text-gray-600 text-sm">{program.description}</p>
                   </div>
                 </div>
               )
@@ -108,7 +108,7 @@ export default function ProgramsCarousel() {
           <div className="flex justify-center items-center gap-4">
             <button
               onClick={prev}
-              className="p-2 rounded-full bg-primary hover:bg-red-700 text-white transition-colors"
+              className="p-2 rounded-full bg-primary hover:bg-red-800 text-white transition-colors"
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
@@ -118,14 +118,14 @@ export default function ProgramsCarousel() {
                   key={index}
                   onClick={() => setCurrentIndex(index)}
                   className={`h-3 rounded-full transition-all ${
-                    index === currentIndex ? 'w-8 bg-primary' : 'w-3 bg-gray-300'
+                    index === currentIndex ? 'w-8 bg-yellow-400' : 'w-3 bg-gray-300'
                   }`}
                 />
               ))}
             </div>
             <button
               onClick={next}
-              className="p-2 rounded-full bg-primary hover:bg-red-700 text-white transition-colors"
+              className="p-2 rounded-full bg-primary hover:bg-red-800 text-white transition-colors"
             >
               <ChevronRight className="w-6 h-6" />
             </button>
@@ -135,7 +135,7 @@ export default function ProgramsCarousel() {
           <div className="text-center mt-8">
             <Link
               href="/programs"
-              className="inline-block px-8 py-3 bg-primary hover:bg-red-700 text-white font-bold rounded-lg transition-all transform hover:scale-105"
+              className="inline-block px-8 py-3 bg-primary hover:bg-red-800 text-white font-bold rounded-lg transition-all transform hover:scale-105"
             >
               Explore All Programs
             </Link>

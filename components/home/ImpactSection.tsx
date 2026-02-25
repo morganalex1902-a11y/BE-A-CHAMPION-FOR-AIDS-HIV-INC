@@ -28,12 +28,12 @@ export default function ImpactSection() {
   const [expandedId, setExpandedId] = useState<number | null>(null)
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-16 md:py-24 bg-gradient-to-b from-white to-amber-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Our Impact</h2>
-          <div className="h-1 w-20 bg-primary mx-auto mb-6"></div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#0A2350] mb-4">Our Impact</h2>
+          <div className="h-1 w-20 bg-yellow-400 mx-auto mb-6"></div>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Hear from the community members whose lives have been touched by our work
           </p>
         </div>
@@ -44,26 +44,26 @@ export default function ImpactSection() {
             return (
               <div
                 key={testimonial.id}
-                className="border border-gray-200 rounded-lg overflow-hidden hover:border-primary transition-colors"
+                className="border-2 border-yellow-400 rounded-lg overflow-hidden hover:shadow-lg transition-all"
               >
                 <button
                   onClick={() => setExpandedId(isExpanded ? null : testimonial.id)}
-                  className="w-full p-6 text-left hover:bg-gray-50 transition-colors flex items-start justify-between"
+                  className="w-full p-6 text-left hover:bg-yellow-50 transition-colors flex items-start justify-between"
                 >
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-2">
                       <div className="flex gap-1">
                         {[...Array(5)].map((_, i) => (
-                          <span key={i} className="text-primary">★</span>
+                          <span key={i} className="text-yellow-400">★</span>
                         ))}
                       </div>
                     </div>
-                    <p className={`text-foreground font-medium ${isExpanded ? '' : 'line-clamp-2'}`}>
+                    <p className={`text-[#0A2350] font-medium ${isExpanded ? '' : 'line-clamp-2'}`}>
                       "{testimonial.quote}"
                     </p>
                     <div className="mt-3">
-                      <p className="font-semibold text-foreground">{testimonial.author}</p>
-                      <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                      <p className="font-semibold text-[#0A2350]">{testimonial.author}</p>
+                      <p className="text-sm text-gray-600">{testimonial.role}</p>
                     </div>
                   </div>
                   <div className="ml-4 flex-shrink-0">
@@ -80,20 +80,20 @@ export default function ImpactSection() {
         </div>
 
         {/* Key Achievements */}
-        <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-8 rounded-lg">
-          <h3 className="text-2xl font-bold text-foreground mb-6 text-center">Key Achievements</h3>
+        <div className="bg-gradient-to-r from-yellow-100 to-yellow-50 p-8 rounded-lg border-2 border-yellow-400">
+          <h3 className="text-2xl font-bold text-[#0A2350] mb-6 text-center">Key Achievements</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="text-center">
               <div className="text-4xl font-bold text-primary mb-2">500+</div>
-              <p className="text-muted-foreground">Youth Educated Through Programs</p>
+              <p className="text-gray-700">Youth Educated Through Programs</p>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-primary mb-2">50+</div>
-              <p className="text-muted-foreground">Community Events Hosted</p>
+              <p className="text-gray-700">Community Events Hosted</p>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-primary mb-2">1000+</div>
-              <p className="text-muted-foreground">Items Distributed in Giveaways</p>
+              <p className="text-gray-700">Items Distributed in Giveaways</p>
             </div>
           </div>
         </div>

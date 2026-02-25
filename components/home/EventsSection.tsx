@@ -41,12 +41,12 @@ const upcomingEvents = [
 
 export default function EventsSection() {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-r from-primary/5 to-primary/10">
+    <section className="py-16 md:py-24 bg-gradient-to-b from-yellow-50 to-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Latest Events</h2>
-          <div className="h-1 w-20 bg-primary mx-auto mb-6"></div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#0A2350] mb-4">Latest Events</h2>
+          <div className="h-1 w-20 bg-yellow-400 mx-auto mb-6"></div>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Join us for upcoming events and be part of our mission
           </p>
         </div>
@@ -71,19 +71,19 @@ export default function EventsSection() {
           {upcomingEvents.map((event) => (
             <div
               key={event.id}
-              className="bg-white rounded-lg border border-primary/20 hover:shadow-lg hover:border-primary transition-all duration-300 overflow-hidden"
+              className="bg-white rounded-lg border-2 border-yellow-400 hover:shadow-lg transition-all duration-300 overflow-hidden"
             >
               <div className="p-6">
                 <div className="flex items-start justify-between mb-4">
                   <div>
-                  <h3 className="text-xl font-bold text-foreground mb-1">{event.title}</h3>
-                  <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full">
+                  <h3 className="text-xl font-bold text-[#0A2350] mb-1">{event.title}</h3>
+                  <span className="inline-block px-3 py-1 bg-yellow-100 text-primary text-xs font-semibold rounded-full">
                     {event.category}
                   </span>
                 </div>
               </div>
 
-              <div className="space-y-3 text-muted-foreground">
+              <div className="space-y-3 text-gray-600">
                 <div className="flex items-center gap-3">
                   <Calendar className="w-5 h-5 text-primary flex-shrink-0" />
                   <span>{event.date}</span>
@@ -105,7 +105,7 @@ export default function EventsSection() {
         <div className="text-center">
           <Link
             href="/events"
-            className="inline-block px-8 py-3 bg-primary hover:bg-red-700 text-white font-bold rounded-lg transition-all transform hover:scale-105"
+            className="inline-block px-8 py-3 bg-primary hover:bg-red-800 text-white font-bold rounded-lg transition-all transform hover:scale-105"
           >
             View Full Event Calendar
           </Link>
