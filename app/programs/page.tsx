@@ -105,10 +105,10 @@ export default function Programs() {
       <Header />
       <main className="bg-background">
         {/* Hero Section */}
-        <section className="py-16 md:py-24 bg-gradient-to-r from-primary/10 to-primary/5 border-b border-border">
+        <section className="py-16 md:py-24 bg-primary text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">Our Programs</h1>
-            <p className="text-xl text-muted-foreground">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">Our Programs</h1>
+            <p className="text-xl opacity-95">
               Empowering communities through education, support, and action
             </p>
           </div>
@@ -127,13 +127,13 @@ export default function Programs() {
                     onClick={() => setSelectedProgram(isSelected ? null : program)}
                     className={`text-left p-6 rounded-lg border-2 transition-all transform cursor-pointer ${
                       isSelected
-                        ? `${program.borderColor} ${program.color} border-primary scale-105 shadow-lg`
-                        : `border-gray-200 hover:border-primary hover:shadow-md`
+                        ? `bg-primary text-white border-primary scale-105 shadow-lg`
+                        : `bg-white border-gray-200 text-foreground hover:border-primary hover:shadow-md`
                     }`}
                   >
-                    <Icon className={`w-10 h-10 mb-3 ${program.accentColor}`} />
-                    <h3 className="text-xl font-bold text-foreground mb-2">{program.title}</h3>
-                    <p className="text-muted-foreground text-sm">{program.description}</p>
+                    <Icon className={`w-10 h-10 mb-3 ${isSelected ? 'text-white' : program.accentColor}`} />
+                    <h3 className={`text-xl font-bold mb-2 ${isSelected ? 'text-white' : 'text-foreground'}`}>{program.title}</h3>
+                    <p className={`text-sm ${isSelected ? 'text-white/90' : 'text-foreground'}`}>{program.description}</p>
                   </button>
                 )
               })}
@@ -141,34 +141,34 @@ export default function Programs() {
 
             {/* Selected Program Details */}
             {selectedProgram && (
-              <div className={`${selectedProgram.color} border-2 ${selectedProgram.borderColor} p-8 rounded-lg animate-fade-in`}>
+              <div className="bg-white border-2 border-secondary p-8 rounded-lg animate-fade-in">
                 <div className="flex items-start gap-4 mb-6">
-                  {selectedProgram.icon && <selectedProgram.icon className={`w-12 h-12 ${selectedProgram.accentColor} flex-shrink-0`} />}
+                  {selectedProgram.icon && <selectedProgram.icon className={`w-12 h-12 text-primary flex-shrink-0`} />}
                   <div>
-                    <h2 className="text-3xl font-bold text-foreground">{selectedProgram.title}</h2>
-                    <p className="text-muted-foreground mt-2">{selectedProgram.fullDescription}</p>
+                    <h2 className="text-3xl font-bold text-primary">{selectedProgram.title}</h2>
+                    <p className="text-foreground mt-2">{selectedProgram.fullDescription}</p>
                   </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
-                    <h3 className="text-lg font-bold text-foreground mb-4">Program Highlights</h3>
+                    <h3 className="text-lg font-bold text-primary mb-4">Program Highlights</h3>
                     <ul className="space-y-2">
                       {selectedProgram.details.map((detail, index) => (
                         <li key={index} className="flex items-start gap-3">
                           <span className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">
                             ✓
                           </span>
-                          <span className="text-muted-foreground">{detail}</span>
+                          <span className="text-foreground">{detail}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
 
                   <div className="flex flex-col justify-between">
-                    <div className="bg-white p-6 rounded-lg border border-gray-200 mb-4">
-                      <h3 className="font-bold text-foreground mb-3">Get Involved</h3>
-                      <p className="text-muted-foreground text-sm mb-4">
+                    <div className="bg-secondary/10 p-6 rounded-lg border-2 border-secondary mb-4">
+                      <h3 className="font-bold text-primary mb-3">Get Involved</h3>
+                      <p className="text-foreground text-sm mb-4">
                         Interested in participating in this program? We'd love to have you join us!
                       </p>
                       <button className="w-full px-4 py-2 bg-primary hover:bg-red-700 text-white font-semibold rounded-lg transition-colors">
@@ -178,7 +178,7 @@ export default function Programs() {
 
                     <a
                       href="/contact"
-                      className="inline-block px-4 py-2 bg-secondary text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors text-center"
+                      className="inline-block px-4 py-2 bg-secondary text-black font-semibold rounded-lg hover:bg-yellow-500 transition-colors text-center"
                     >
                       Learn More
                     </a>
@@ -190,29 +190,29 @@ export default function Programs() {
         </section>
 
         {/* Statistics Section */}
-        <section className="py-16 md:py-24 bg-gradient-to-r from-primary/5 to-primary/10">
+        <section className="py-16 md:py-24 bg-primary">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-foreground text-center mb-12">Our Impact By The Numbers</h2>
+            <h2 className="text-3xl font-bold text-white text-center mb-12">Our Impact By The Numbers</h2>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              <div className="text-center p-6 bg-white rounded-lg border border-border hover:shadow-lg transition-shadow">
+              <div className="text-center p-6 bg-white rounded-lg border-2 border-secondary hover:shadow-lg transition-shadow">
                 <div className="text-4xl font-bold text-primary mb-2">500+</div>
-                <p className="text-muted-foreground font-semibold">Youth Educated</p>
-                <p className="text-xs text-gray-500 mt-2">Through our programs</p>
+                <p className="text-foreground font-semibold">Youth Educated</p>
+                <p className="text-xs text-muted-foreground mt-2">Through our programs</p>
               </div>
-              <div className="text-center p-6 bg-white rounded-lg border border-border hover:shadow-lg transition-shadow">
+              <div className="text-center p-6 bg-white rounded-lg border-2 border-secondary hover:shadow-lg transition-shadow">
                 <div className="text-4xl font-bold text-primary mb-2">50+</div>
-                <p className="text-muted-foreground font-semibold">Events Hosted</p>
-                <p className="text-xs text-gray-500 mt-2">Community gatherings</p>
+                <p className="text-foreground font-semibold">Events Hosted</p>
+                <p className="text-xs text-muted-foreground mt-2">Community gatherings</p>
               </div>
-              <div className="text-center p-6 bg-white rounded-lg border border-border hover:shadow-lg transition-shadow">
+              <div className="text-center p-6 bg-white rounded-lg border-2 border-secondary hover:shadow-lg transition-shadow">
                 <div className="text-4xl font-bold text-primary mb-2">1000+</div>
-                <p className="text-muted-foreground font-semibold">Items Given</p>
-                <p className="text-xs text-gray-500 mt-2">In community giveaways</p>
+                <p className="text-foreground font-semibold">Items Given</p>
+                <p className="text-xs text-muted-foreground mt-2">In community giveaways</p>
               </div>
-              <div className="text-center p-6 bg-white rounded-lg border border-border hover:shadow-lg transition-shadow">
+              <div className="text-center p-6 bg-white rounded-lg border-2 border-secondary hover:shadow-lg transition-shadow">
                 <div className="text-4xl font-bold text-primary mb-2">100%</div>
-                <p className="text-muted-foreground font-semibold">Inclusive</p>
-                <p className="text-xs text-gray-500 mt-2">All welcome, no judgment</p>
+                <p className="text-foreground font-semibold">Inclusive</p>
+                <p className="text-xs text-muted-foreground mt-2">All welcome, no judgment</p>
               </div>
             </div>
           </div>

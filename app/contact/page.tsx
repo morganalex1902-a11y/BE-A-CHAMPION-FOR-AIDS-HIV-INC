@@ -44,10 +44,10 @@ export default function Contact() {
       <Header />
       <main className="bg-background">
         {/* Hero Section */}
-        <section className="py-16 md:py-24 bg-gradient-to-r from-primary/10 to-primary/5 border-b border-border">
+        <section className="py-16 md:py-24 bg-primary text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">Get In Touch</h1>
-            <p className="text-xl text-muted-foreground">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">Get In Touch</h1>
+            <p className="text-xl opacity-95">
               We'd love to hear from you. Reach out with questions, comments, or to get involved.
             </p>
           </div>
@@ -59,15 +59,15 @@ export default function Contact() {
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               {/* Contact Info */}
               <div className="md:col-span-1">
-                <h2 className="text-2xl font-bold text-foreground mb-6">Contact Information</h2>
+                <h2 className="text-2xl font-bold text-primary mb-6">Contact Information</h2>
 
                 {/* Address */}
-                <div className="mb-6 p-6 bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg border border-primary/20">
+                <div className="mb-6 p-6 bg-secondary/10 rounded-lg border-2 border-secondary">
                   <div className="flex items-start gap-4">
                     <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                     <div>
-                      <h3 className="font-bold text-foreground mb-2">Address</h3>
-                      <p className="text-muted-foreground text-sm">
+                      <h3 className="font-bold text-primary mb-2">Address</h3>
+                      <p className="text-foreground text-sm">
                         300 NW 34th Street<br/>
                         Apt. #206<br/>
                         Pompano Beach, FL 33064<br/>
@@ -78,11 +78,11 @@ export default function Contact() {
                 </div>
 
                 {/* Phone */}
-                <div className="mb-6 p-6 bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg border border-primary/20">
+                <div className="mb-6 p-6 bg-secondary/10 rounded-lg border-2 border-secondary">
                   <div className="flex items-start gap-4">
                     <Phone className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                     <div>
-                      <h3 className="font-bold text-foreground mb-2">Phone</h3>
+                      <h3 className="font-bold text-primary mb-2">Phone</h3>
                       <a href="tel:+19547402146" className="text-primary hover:text-red-700 font-semibold">
                         (954) 740-2146
                       </a>
@@ -91,11 +91,11 @@ export default function Contact() {
                 </div>
 
                 {/* Email */}
-                <div className="mb-6 p-6 bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg border border-primary/20">
+                <div className="mb-6 p-6 bg-secondary/10 rounded-lg border-2 border-secondary">
                   <div className="flex items-start gap-4">
                     <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                     <div>
-                      <h3 className="font-bold text-foreground mb-2">Email</h3>
+                      <h3 className="font-bold text-primary mb-2">Email</h3>
                       <a href="mailto:beachampaid.hivinc@gmail.com" className="text-primary hover:text-red-700 font-semibold break-all text-sm">
                         beachampaid.hivinc@gmail.com
                       </a>
@@ -104,12 +104,12 @@ export default function Contact() {
                 </div>
 
                 {/* Hours */}
-                <div className="mb-6 p-6 bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg border border-primary/20">
+                <div className="mb-6 p-6 bg-secondary/10 rounded-lg border-2 border-secondary">
                   <div className="flex items-start gap-4">
                     <Clock className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                     <div>
-                      <h3 className="font-bold text-foreground mb-2">Response Time</h3>
-                      <p className="text-muted-foreground text-sm">
+                      <h3 className="font-bold text-primary mb-2">Response Time</h3>
+                      <p className="text-foreground text-sm">
                         We typically respond to inquiries within 24-48 hours during business days.
                       </p>
                     </div>
@@ -133,8 +133,8 @@ export default function Contact() {
 
               {/* Contact Form */}
               <div className="md:col-span-2">
-                <div className="bg-white border border-border rounded-lg p-8">
-                  <h2 className="text-2xl font-bold text-foreground mb-6">Send us a Message</h2>
+                <div className="bg-white border-2 border-gray-200 rounded-lg p-8">
+                  <h2 className="text-2xl font-bold text-primary mb-6">Send us a Message</h2>
 
                   {submitted ? (
                     <div className="bg-green-50 border border-green-200 rounded-lg p-6 text-center">
@@ -148,54 +148,54 @@ export default function Contact() {
                     <form onSubmit={handleSubmit} className="space-y-6">
                       {/* Name */}
                       <div>
-                        <label className="block text-sm font-semibold text-foreground mb-2">Full Name *</label>
+                        <label className="block text-sm font-semibold text-primary mb-2">Full Name *</label>
                         <input
                           type="text"
                           name="name"
                           value={formData.name}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary transition-colors"
+                          className="w-full px-4 py-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-primary transition-colors"
                           placeholder="Your full name"
                         />
                       </div>
 
                       {/* Email */}
                       <div>
-                        <label className="block text-sm font-semibold text-foreground mb-2">Email Address *</label>
+                        <label className="block text-sm font-semibold text-primary mb-2">Email Address *</label>
                         <input
                           type="email"
                           name="email"
                           value={formData.email}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary transition-colors"
+                          className="w-full px-4 py-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-primary transition-colors"
                           placeholder="your@email.com"
                         />
                       </div>
 
                       {/* Phone */}
                       <div>
-                        <label className="block text-sm font-semibold text-foreground mb-2">Phone Number</label>
+                        <label className="block text-sm font-semibold text-primary mb-2">Phone Number</label>
                         <input
                           type="tel"
                           name="phone"
                           value={formData.phone}
                           onChange={handleInputChange}
-                          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary transition-colors"
+                          className="w-full px-4 py-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-primary transition-colors"
                           placeholder="(123) 456-7890"
                         />
                       </div>
 
                       {/* Topic */}
                       <div>
-                        <label className="block text-sm font-semibold text-foreground mb-2">Topic *</label>
+                        <label className="block text-sm font-semibold text-primary mb-2">Topic *</label>
                         <select
                           name="topic"
                           value={formData.topic}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary transition-colors"
+                          className="w-full px-4 py-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-primary transition-colors"
                         >
                           <option value="">Select a topic</option>
                           <option value="general">General Inquiry</option>
@@ -211,20 +211,20 @@ export default function Contact() {
 
                       {/* Message */}
                       <div>
-                        <label className="block text-sm font-semibold text-foreground mb-2">Message *</label>
+                        <label className="block text-sm font-semibold text-primary mb-2">Message *</label>
                         <textarea
                           name="message"
                           value={formData.message}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary transition-colors resize-none"
+                          className="w-full px-4 py-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-primary transition-colors resize-none"
                           rows={6}
                           placeholder="Tell us how we can help you..."
                         ></textarea>
                       </div>
 
                       {/* Privacy Notice */}
-                      <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 text-xs text-muted-foreground">
+                      <div className="bg-secondary/10 p-4 rounded-lg border-2 border-secondary text-xs text-foreground">
                         <p>
                           We respect your privacy. Your information will only be used to respond to your inquiry and will not be shared with third parties.
                         </p>
@@ -256,24 +256,24 @@ export default function Contact() {
             </div>
 
             {/* FAQ Box */}
-            <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-8 rounded-lg border border-primary/20">
-              <h2 className="text-2xl font-bold text-foreground mb-6">Quick Questions?</h2>
+            <div className="bg-secondary/10 p-8 rounded-lg border-2 border-secondary">
+              <h2 className="text-2xl font-bold text-primary mb-6">Quick Questions?</h2>
               <div className="grid md:grid-cols-3 gap-6">
                 <div>
-                  <h3 className="font-bold text-foreground mb-2">🎯 What should I write about?</h3>
-                  <p className="text-sm text-muted-foreground">
+                  <h3 className="font-bold text-primary mb-2">🎯 What should I write about?</h3>
+                  <p className="text-sm text-foreground">
                     Tell us about your interest - whether you want to volunteer, donate, attend events, or just learn more about our mission.
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-bold text-foreground mb-2">📱 How quickly will you respond?</h3>
-                  <p className="text-sm text-muted-foreground">
+                  <h3 className="font-bold text-primary mb-2">📱 How quickly will you respond?</h3>
+                  <p className="text-sm text-foreground">
                     We typically reply within 24-48 business hours. For urgent matters, please call us directly.
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-bold text-foreground mb-2">🔒 Is my information safe?</h3>
-                  <p className="text-sm text-muted-foreground">
+                  <h3 className="font-bold text-primary mb-2">🔒 Is my information safe?</h3>
+                  <p className="text-sm text-foreground">
                     Yes. We never share your information and follow strict privacy protocols. Your trust is important to us.
                   </p>
                 </div>
