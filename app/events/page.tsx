@@ -122,9 +122,9 @@ export default function Events() {
       <Header />
       <main className="bg-background">
         {/* Hero Section */}
-        <section className="py-16 md:py-24 bg-primary text-white">
+        <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">Events & Calendar</h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-secondary">Events & Calendar</h1>
             <p className="text-xl opacity-95">
               Join us for upcoming events in South Florida
             </p>
