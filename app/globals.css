@@ -4,74 +4,74 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Light mode theme - Gold/Red/Navy for HIV awareness */
+  /* Light mode theme - Gold/Red/White for HIV awareness */
   --background: #ffffff;
-  --foreground: #0A2350;
+  --foreground: #1a1a1a;
   --card: #ffffff;
-  --card-foreground: #0A2350;
+  --card-foreground: #1a1a1a;
   --popover: #ffffff;
-  --popover-foreground: #0A2350;
+  --popover-foreground: #1a1a1a;
   --primary: #E31B23;
   --primary-foreground: #ffffff;
   --secondary: #FFD700;
-  --secondary-foreground: #0A2350;
+  --secondary-foreground: #1a1a1a;
   --muted: #f5f5f5;
   --muted-foreground: #666666;
   --accent: #FFD700;
-  --accent-foreground: #0A2350;
+  --accent-foreground: #1a1a1a;
   --destructive: #E31B23;
   --destructive-foreground: #ffffff;
-  --border: #FFD700;
+  --border: #e0e0e0;
   --input: #ffffff;
   --ring: #E31B23;
   --chart-1: #E31B23;
-  --chart-2: #0A2350;
+  --chart-2: #1a1a1a;
   --chart-3: #FFD700;
   --chart-4: #E31B23;
-  --chart-5: #0A2350;
+  --chart-5: #1a1a1a;
   --radius: 0.625rem;
   --sidebar: #ffffff;
-  --sidebar-foreground: #0A2350;
+  --sidebar-foreground: #1a1a1a;
   --sidebar-primary: #E31B23;
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: #FFD700;
-  --sidebar-accent-foreground: #0A2350;
-  --sidebar-border: #FFD700;
+  --sidebar-accent-foreground: #1a1a1a;
+  --sidebar-border: #e0e0e0;
   --sidebar-ring: #E31B23;
 }
 
 .dark {
-  --background: #0A2350;
+  --background: #1a1a1a;
   --foreground: #ffffff;
-  --card: #1a3a5e;
+  --card: #2a2a2a;
   --card-foreground: #ffffff;
-  --popover: #0A2350;
+  --popover: #1a1a1a;
   --popover-foreground: #ffffff;
   --primary: #ff4444;
   --primary-foreground: #ffffff;
   --secondary: #FFD700;
-  --secondary-foreground: #0A2350;
+  --secondary-foreground: #1a1a1a;
   --muted: #333333;
   --muted-foreground: #999999;
   --accent: #FFD700;
-  --accent-foreground: #0A2350;
+  --accent-foreground: #1a1a1a;
   --destructive: #ff4444;
   --destructive-foreground: #ffffff;
-  --border: #FFD700;
-  --input: #1a3a5e;
+  --border: #333333;
+  --input: #2a2a2a;
   --ring: #ff4444;
   --chart-1: #ff4444;
   --chart-2: #FFD700;
   --chart-3: #999999;
   --chart-4: #ff4444;
   --chart-5: #FFD700;
-  --sidebar: #0A2350;
+  --sidebar: #1a1a1a;
   --sidebar-foreground: #ffffff;
   --sidebar-primary: #ff4444;
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: #FFD700;
-  --sidebar-accent-foreground: #0A2350;
-  --sidebar-border: #FFD700;
+  --sidebar-accent-foreground: #1a1a1a;
+  --sidebar-border: #333333;
   --sidebar-ring: #ff4444;
 }
 
