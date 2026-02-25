@@ -15,7 +15,7 @@ export default function HeroSection() {
       />
 
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-25 z-10">
+      <div className="absolute inset-0 opacity-10 z-10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(255,215,0,0.15),transparent_50%)]"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_80%,rgba(227,27,35,0.15),transparent_50%)]"></div>
       </div>
