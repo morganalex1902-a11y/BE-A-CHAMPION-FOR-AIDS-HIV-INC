@@ -122,17 +122,17 @@ export default function Events() {
       <Header />
       <main className="bg-background">
         {/* Hero Section */}
-        <section className="py-16 md:py-24 bg-gradient-to-r from-primary/10 to-primary/5 border-b border-border">
+        <section className="py-16 md:py-24 bg-primary text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">Events & Calendar</h1>
-            <p className="text-xl text-muted-foreground">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">Events & Calendar</h1>
+            <p className="text-xl opacity-95">
               Join us for upcoming events in South Florida
             </p>
           </div>
         </section>
 
         {/* Filters */}
-        <section className="py-8 bg-white border-b border-border sticky top-20 z-40">
+        <section className="py-8 bg-white border-b-2 border-secondary sticky top-20 z-40">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center gap-4 overflow-x-auto pb-2">
               <Filter className="w-5 h-5 text-primary flex-shrink-0" />
@@ -143,7 +143,7 @@ export default function Events() {
                   className={`px-4 py-2 rounded-full whitespace-nowrap font-semibold transition-all ${
                     selectedCategory === category
                       ? 'bg-primary text-white'
-                      : 'bg-gray-200 text-foreground hover:bg-gray-300'
+                      : 'bg-gray-100 text-foreground hover:bg-gray-200'
                   }`}
                 >
                   {category}
@@ -165,7 +165,7 @@ export default function Events() {
                 {filteredEvents.map((event) => (
                   <div
                     key={event.id}
-                    className="bg-white border border-border rounded-lg p-6 hover:shadow-lg hover:border-primary transition-all"
+                    className="bg-white border-2 border-gray-200 rounded-lg p-6 hover:shadow-lg hover:border-primary transition-all"
                   >
                     <div className="flex flex-col md:flex-row gap-6">
                       {/* Left Side - Date */}
@@ -193,15 +193,15 @@ export default function Events() {
                         <div className="flex items-start justify-between mb-3">
                           <div>
                             <h3 className="text-2xl font-bold text-foreground mb-1">{event.title}</h3>
-                            <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full">
+                            <span className="inline-block px-3 py-1 bg-secondary text-black text-xs font-semibold rounded-full">
                               {event.category}
                             </span>
                           </div>
                         </div>
 
-                        <p className="text-muted-foreground mb-4">{event.description}</p>
+                        <p className="text-foreground mb-4">{event.description}</p>
 
-                        <div className="space-y-2 text-muted-foreground">
+                        <div className="space-y-2 text-foreground">
                           <div className="flex items-center gap-3">
                             <Clock className="w-5 h-5 text-primary flex-shrink-0" />
                             <span>{event.time}</span>
@@ -227,9 +227,9 @@ export default function Events() {
             )}
 
             {/* Info Box */}
-            <div className="mt-12 bg-gradient-to-r from-primary/10 to-primary/5 p-6 rounded-lg border border-primary/20">
-              <h3 className="text-lg font-bold text-foreground mb-2">Can't find the event you're looking for?</h3>
-              <p className="text-muted-foreground mb-4">
+            <div className="mt-12 bg-secondary/10 p-6 rounded-lg border-2 border-secondary">
+              <h3 className="text-lg font-bold text-primary mb-2">Can't find the event you're looking for?</h3>
+              <p className="text-foreground mb-4">
                 Check back soon for our complete 2026 calendar or contact us to stay updated on upcoming events.
               </p>
               <a

@@ -37,10 +37,10 @@ export default function About() {
       <Header />
       <main className="bg-background">
         {/* Hero Section */}
-        <section className="py-16 md:py-24 bg-gradient-to-r from-primary/10 to-primary/5 border-b border-border">
+        <section className="py-16 md:py-24 bg-primary text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">Our Story</h1>
-            <p className="text-xl text-muted-foreground">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">Our Story</h1>
+            <p className="text-xl opacity-95">
               Dedicated to fighting HIV/AIDS stigma through education, empowerment, and community action
             </p>
           </div>
@@ -52,46 +52,46 @@ export default function About() {
             <div className="grid md:grid-cols-2 gap-12 mb-16">
               {/* Mission */}
               <div>
-                <h2 className="text-3xl font-bold text-foreground mb-4">Our Mission</h2>
-                <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                <h2 className="text-3xl font-bold text-primary mb-4 pb-3 border-b-4 border-secondary w-fit">Our Mission</h2>
+                <p className="text-lg text-foreground mb-6 leading-relaxed">
                   BE A CHAMPION FOR AIDS-HIV INC is committed to empowering communities through education, awareness, and advocacy. We work to reduce stigma, promote prevention and testing, and support those affected by HIV/AIDS.
                 </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p className="text-lg text-foreground leading-relaxed">
                   Our mission is built on the principles of inclusivity, compassion, and action. We believe that education and community support are the keys to ending HIV/AIDS stigma and improving health outcomes.
                 </p>
               </div>
 
               {/* Core Values */}
               <div>
-                <h2 className="text-3xl font-bold text-foreground mb-4">Our Values</h2>
+                <h2 className="text-3xl font-bold text-primary mb-4 pb-3 border-b-4 border-secondary w-fit">Our Values</h2>
                 <div className="space-y-4">
-                  <div className="p-4 bg-primary/10 rounded-lg border-l-4 border-primary">
-                    <h3 className="font-bold text-foreground mb-1">Inclusivity</h3>
-                    <p className="text-muted-foreground text-sm">We welcome and serve all members of the community regardless of age, race, gender, or background.</p>
+                  <div className="p-4 bg-secondary/10 rounded-lg border-l-4 border-secondary">
+                    <h3 className="font-bold text-primary mb-1">Inclusivity</h3>
+                    <p className="text-foreground text-sm">We welcome and serve all members of the community regardless of age, race, gender, or background.</p>
                   </div>
-                  <div className="p-4 bg-primary/10 rounded-lg border-l-4 border-primary">
-                    <h3 className="font-bold text-foreground mb-1">Education</h3>
-                    <p className="text-muted-foreground text-sm">We provide accurate, accessible information about HIV/AIDS prevention, testing, and treatment.</p>
+                  <div className="p-4 bg-secondary/10 rounded-lg border-l-4 border-secondary">
+                    <h3 className="font-bold text-primary mb-1">Education</h3>
+                    <p className="text-foreground text-sm">We provide accurate, accessible information about HIV/AIDS prevention, testing, and treatment.</p>
                   </div>
-                  <div className="p-4 bg-primary/10 rounded-lg border-l-4 border-primary">
-                    <h3 className="font-bold text-foreground mb-1">Empowerment</h3>
-                    <p className="text-muted-foreground text-sm">We empower individuals and communities to take action in the fight against stigma and disease.</p>
+                  <div className="p-4 bg-secondary/10 rounded-lg border-l-4 border-secondary">
+                    <h3 className="font-bold text-primary mb-1">Empowerment</h3>
+                    <p className="text-foreground text-sm">We empower individuals and communities to take action in the fight against stigma and disease.</p>
                   </div>
-                  <div className="p-4 bg-primary/10 rounded-lg border-l-4 border-primary">
-                    <h3 className="font-bold text-foreground mb-1">Compassion</h3>
-                    <p className="text-muted-foreground text-sm">We approach our work with compassion and respect for those affected by HIV/AIDS.</p>
+                  <div className="p-4 bg-secondary/10 rounded-lg border-l-4 border-secondary">
+                    <h3 className="font-bold text-primary mb-1">Compassion</h3>
+                    <p className="text-foreground text-sm">We approach our work with compassion and respect for those affected by HIV/AIDS.</p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Organization Details */}
-            <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-lg border border-border">
-              <h2 className="text-2xl font-bold text-foreground mb-6">Organization Details</h2>
+            <div className="bg-white p-8 rounded-lg border-2 border-secondary">
+              <h2 className="text-2xl font-bold text-primary mb-6 pb-3 border-b-2 border-secondary w-fit">Organization Details</h2>
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="font-semibold text-foreground mb-2">Legal Information</h3>
-                  <ul className="space-y-2 text-muted-foreground">
+                  <h3 className="font-semibold text-primary mb-3">Legal Information</h3>
+                  <ul className="space-y-2 text-foreground">
                     <li><strong>Organization Name:</strong> BE A CHAMPION FOR AIDS-HIV INC</li>
                     <li><strong>Status:</strong> 501(c)(3) Nonprofit</li>
                     <li><strong>EIN:</strong> 83-3215091</li>
@@ -100,8 +100,8 @@ export default function About() {
                   </ul>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground mb-2">Contact Information</h3>
-                  <ul className="space-y-2 text-muted-foreground">
+                  <h3 className="font-semibold text-primary mb-3">Contact Information</h3>
+                  <ul className="space-y-2 text-foreground">
                     <li><strong>Address:</strong> 300 NW 34th Street, Apt. #206, Pompano Beach, FL 33064</li>
                     <li><strong>Phone:</strong> (954) 740-2146</li>
                     <li><strong>Email:</strong> beachampaid.hivinc@gmail.com</li>
@@ -114,21 +114,21 @@ export default function About() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white">
+        <section className="py-16 md:py-24 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-foreground mb-4">Frequently Asked Questions</h2>
-              <div className="h-1 w-20 bg-primary mx-auto"></div>
+              <h2 className="text-4xl font-bold text-primary mb-4">Frequently Asked Questions</h2>
+              <div className="h-1 w-20 bg-secondary mx-auto"></div>
             </div>
 
             <div className="space-y-4">
               {faqs.map((faq, index) => {
                 const isExpanded = expandedId === index
                 return (
-                  <div key={index} className="border border-gray-200 rounded-lg overflow-hidden">
+                  <div key={index} className="border-2 border-gray-200 rounded-lg overflow-hidden hover:border-primary transition-colors">
                     <button
                       onClick={() => setExpandedId(isExpanded ? null : index)}
-                      className="w-full p-6 text-left hover:bg-gray-50 transition-colors flex items-center justify-between"
+                      className="w-full p-6 text-left hover:bg-secondary/5 transition-colors flex items-center justify-between"
                     >
                       <h3 className="text-lg font-semibold text-foreground">{faq.question}</h3>
                       <div>
@@ -140,7 +140,7 @@ export default function About() {
                       </div>
                     </button>
                     {isExpanded && (
-                      <div className="px-6 pb-6 text-muted-foreground border-t border-border">
+                      <div className="px-6 pb-6 text-foreground border-t-2 border-secondary bg-secondary/5">
                         {faq.answer}
                       </div>
                     )}
