@@ -18,22 +18,22 @@ export default function Header() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white backdrop-blur-sm border-b-2 border-primary shadow-sm">
+    <header className="sticky top-0 z-50 w-full bg-gray-900 backdrop-blur-sm border-b-2 border-secondary shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <div className="w-20 h-20 relative">
               <Image
-                src="https://cdn.builder.io/api/v1/image/assets%2Fd262aa17ef624b1d94677905217b9bcb%2F5a9d4a72e1ef46559e7146d1f695acbd?format=webp&width=800&height=1200"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fd262aa17ef624b1d94677905217b9bcb%2Fd7cf400e75c947708fc21e3acc5d4585?format=webp&width=800&height=1200"
                 alt="BE A CHAMPION FOR AIDS-HIV"
                 fill
                 className="object-contain"
               />
             </div>
             <div className="hidden sm:block">
-              <div className="text-sm font-bold text-primary">BE A CHAMPION</div>
-              <div className="text-xs text-gray-600">FOR AIDS-HIV</div>
+              <div className="text-sm font-bold text-secondary">BE A CHAMPION</div>
+              <div className="text-xs text-gray-400">FOR AIDS-HIV</div>
             </div>
           </Link>
 
@@ -43,7 +43,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-100 rounded-md transition-colors"
+                className="px-3 py-2 text-sm font-medium text-gray-300 hover:text-secondary hover:bg-gray-800 rounded-md transition-colors"
               >
                 {item.label}
               </Link>
@@ -63,25 +63,25 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 hover:bg-gray-100 rounded-md transition-colors"
+            className="md:hidden p-2 hover:bg-gray-800 rounded-md transition-colors"
           >
             {isOpen ? (
-              <X className="w-6 h-6 text-gray-700" />
+              <X className="w-6 h-6 text-gray-300" />
             ) : (
-              <Menu className="w-6 h-6 text-gray-700" />
+              <Menu className="w-6 h-6 text-gray-300" />
             )}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <nav className="md:hidden pb-4 animate-in fade-in slide-in-from-top-2 bg-gray-50 border-t border-primary/20">
+          <nav className="md:hidden pb-4 animate-in fade-in slide-in-from-top-2 bg-gray-800 border-t border-secondary/20">
             {menuItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-100 rounded-md transition-colors"
+                className="block px-3 py-2 text-sm font-medium text-gray-300 hover:text-secondary hover:bg-gray-700 rounded-md transition-colors"
               >
                 {item.label}
               </Link>
