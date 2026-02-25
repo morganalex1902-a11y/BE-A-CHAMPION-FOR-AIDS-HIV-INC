@@ -25,7 +25,7 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <div className="w-20 h-20 relative">
               <Image
-                src="https://cdn.builder.io/api/v1/image/assets%2Fd262aa17ef624b1d94677905217b9bcb%2Fdcb2c7fbb2b04f0c8a3d3d99f08c65fc?format=webp&width=800&height=1200"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fd262aa17ef624b1d94677905217b9bcb%2F5a9d4a72e1ef46559e7146d1f695acbd?format=webp&width=800&height=1200"
                 alt="BE A CHAMPION FOR AIDS-HIV"
                 fill
                 className="object-contain"
