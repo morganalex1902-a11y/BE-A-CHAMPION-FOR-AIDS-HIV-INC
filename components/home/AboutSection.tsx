@@ -50,9 +50,9 @@ export default function AboutSection() {
             </div>
             <div className="flex justify-center">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F5c758e804cba4fa3a488e9088887877b%2Fe96c9aad652440cea842fdb56beed646?format=webp&width=400&height=400"
+                src="https://cdn.builder.io/api/v1/image/assets%2F5c758e804cba4fa3a488e9088887877b%2Fe96c9aad652440cea842fdb56beed646?format=webp&width=800&height=800"
                 alt="BE A CHAMPION FOR AIDS-HIV Official Seal"
-                className="w-48 h-auto rounded-lg shadow-lg"
+                className="w-80 h-auto rounded-lg shadow-lg"
               />
             </div>
           </div>
