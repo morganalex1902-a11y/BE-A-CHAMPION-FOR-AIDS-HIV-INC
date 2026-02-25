@@ -53,10 +53,10 @@ export default function About() {
               {/* Mission */}
               <div>
                 <h2 className="text-3xl font-bold text-primary mb-4 pb-3 border-b-4 border-secondary w-fit">Our Mission</h2>
-                <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-lg text-foreground mb-6 leading-relaxed">
                   BE A CHAMPION FOR AIDS-HIV INC is committed to empowering communities through education, awareness, and advocacy. We work to reduce stigma, promote prevention and testing, and support those affected by HIV/AIDS.
                 </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p className="text-lg text-foreground leading-relaxed">
                   Our mission is built on the principles of inclusivity, compassion, and action. We believe that education and community support are the keys to ending HIV/AIDS stigma and improving health outcomes.
                 </p>
               </div>
