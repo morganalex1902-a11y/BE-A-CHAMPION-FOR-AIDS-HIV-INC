@@ -123,11 +123,20 @@ export default function Events() {
       <main className="bg-background">
         {/* Hero Section */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-secondary">Events & Calendar</h1>
-            <p className="text-xl opacity-95">
-              Join us for upcoming events in South Florida
-            </p>
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid items-center gap-10 lg:grid-cols-[1fr_auto]">
+              <div className="text-center lg:text-left">
+                <h1 className="mb-6 text-5xl font-bold text-secondary md:text-6xl">Events & Calendar</h1>
+                <p className="text-xl opacity-95">Join us for upcoming events in South Florida</p>
+              </div>
+              <div className="mx-auto w-full max-w-xs overflow-hidden rounded-full border-4 border-secondary shadow-[0_0_32px_rgba(220,38,38,0.7)] lg:mx-0">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F047d1840961a481cb83b4782a1b2b517%2F7146d369339d4144b131b0862a432301?format=webp&width=800&height=1200"
+                  alt="We Are In This Fight AIDS and HIV awareness campaign"
+                  className="aspect-square w-full object-cover"
+                />
+              </div>
+            </div>
           </div>
         </section>
 
