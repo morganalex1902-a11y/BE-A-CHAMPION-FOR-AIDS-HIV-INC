@@ -127,7 +127,14 @@
 }
 
 .events-campaign-card {
-  animation: events-campaign-float 6s ease-in-out infinite;
+  animation: events-campaign-float 5s ease-in-out infinite;
+  transition: transform 300ms ease;
+  will-change: transform;
+}
+
+.events-campaign-card:hover {
+  animation-play-state: paused;
+  transform: translateY(-16px);
 }
 
 @media (prefers-reduced-motion: reduce) {
