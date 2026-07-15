@@ -129,11 +129,11 @@ export default function Events() {
                 <h1 className="mb-6 text-5xl font-bold text-secondary md:text-6xl">Events & Calendar</h1>
                 <p className="text-xl opacity-95">Join us for upcoming events in South Florida</p>
               </div>
-              <div className="events-campaign-card mx-auto w-full max-w-sm overflow-hidden rounded-3xl border-4 border-secondary shadow-[0_0_32px_rgba(220,38,38,0.7)] lg:mx-0">
+              <div className="events-campaign-card mx-auto w-full max-w-sm animate-bounce overflow-hidden rounded-3xl border-4 border-secondary shadow-[0_0_32px_rgba(220,38,38,0.7)] [animation-duration:3s] lg:mx-0">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F047d1840961a481cb83b4782a1b2b517%2F7146d369339d4144b131b0862a432301?format=webp&width=800&height=1200"
                   alt="We Are In This Fight AIDS and HIV awareness campaign"
-                  className="block h-auto w-full"
+                  className="block h-auto w-full filter drop-shadow-lg"
                 />
               </div>
             </div>
